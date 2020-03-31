@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #555555;
+}
+
+.Content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #3377aa;
+  overflow: hidden;
+}
+
+.item{
+  list-style: none;
+  font-size: 24px;
+  overflow: hidden;
+  border-top: 1px #3377aa solid;
+  box-sizing: border-box;
+}
+
+.item i{
+  margin: 0 10px;
+}
+
+.btn{
+  display: block;
+  position: relative;
+  padding: 10px 5px;
+  text-decoration: none;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.btn:hover{
+  color: #000;
+  transition: 0.5s;
+}
+
+.btn::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  transform: rotate(45deg);
+  background: #3377aa;
+}
+
+.BContent{
+  background-color: #000;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  max-height: 0;
+}
+
+.BContent a{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.BContent a:hover{
+  color: #3377aa;
+  transition: 0.5s;
+}
+
+.BContent a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #3377aa;
+  visibility: hidden;
+}
+
+.BContent a:hover::before{
+  visibility: visible;
+}
+
+.item:target .BContent{
+  max-height: 10em;
+}
