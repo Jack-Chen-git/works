@@ -1,0 +1,141 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #053455;
+}
+
+.Login{
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(30, 30, 30, 0.9);
+  font-family: 'Macondo Swash Caps', cursive;
+}
+
+.Login h1{
+  margin:0;
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+}
+
+.Login i{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  color:#175977;
+}
+
+.txtb{
+  width: 80%;
+  height: 42px;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #111;
+  border: 2px solid #37c;
+  border-radius: 25px;
+  transition: 0.96s;
+}
+
+.txtb:focus{
+  width: 100%;
+  border: 2px solid #3c7;
+  outline: none;
+  transition: 0.96s;
+}
+
+.LoginB{
+  width: 80%;
+  height: 42px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 16px;
+  border: 2px solid #3c7;
+  border-radius: 25px;
+  font-family: 'Baloo Bhai', cursive;
+  cursor: pointer;
+  transition: 0.96s;
+}
+
+.LoginB:hover{
+  width: 70%;
+  background-color: #3c7;
+  transition: 0.96s;
+}
+
+.CheckB{
+  position: relative;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.CheckB input[type = "checkbox"]{
+  display: none;
+}
+
+.CheckB label{
+  position: relative;
+  left: 18px;
+}
+
+.CheckB input[type = "checkbox"] + label span{
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3c7;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+.CheckB input[type = "checkbox"] + label span::after{
+  content: "";
+  transform: rotate(45);
+  display: none;
+}
+
+.CheckB input[type = "checkbox"]:checked + label span{
+  background-color: #3c7;
+  transition: 0.9s;
+}
+
+.CheckB input[type = "checkbox"]:checked + label span::after{
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 99em;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.9s;
+}
+
+.Login a{
+  width: 50%;
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 60%;
+  text-decoration: none;
+  color: #37c;
+  transition: 0.96s;
+}
+
+.Login a:hover{
+  transform: translateY(-50%);
+  color: #3c7;
+  transition: 0.96s;
+}
